@@ -1,0 +1,11 @@
+.footer-details {
+  @apply grid grid-cols-12 gap-10 mt-24 font-thin text-14;
+
+  p {
+    @apply my-3.5;
+
+    &:last-of-type {
+      @apply mt-10;
+    }
+  }
+}

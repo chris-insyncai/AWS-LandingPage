@@ -1,0 +1,33 @@
+/* By Athlon Front-End Team */
+
+/* Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* App */
+@import 'base/default';
+@import 'base/global';
+
+/* Components */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+
+/* Browser specific styles */
+@import 'dirty/hacks';
