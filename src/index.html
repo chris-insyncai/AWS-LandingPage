@@ -9,6 +9,7 @@
     <meta name="author" content="Plamen Nikolov, WeAreAthlon">
   </head>
   <body>
+
      <!-- HEADER -->
     <header class="absolute z-50 w-full gs_reveal gs_reveal_fromUp">
       <div class="container flex justify-between items-center h-64">
@@ -32,289 +33,295 @@
       </div>
     </header>
     
-    <div class="smooth-scroll">
+    <div id="viewport">
+      <div id="content">
     
-    <!-- CONTENT -->
-    <main class="relative z-40">
-      <!-- SECTION 1 -->
-      <div class="flex items-end 2xl:min-h-720 sm:min-h-screen pt-64 pb-20 bg-fossil-1">
-        <div class="container grid grid-cols-12 gap-10 relative">
-          <div class="lg:col-span-6 col-span-12">
-            <h1 class="gs_reveal gs_reveal_fromLeft">Hey <span class="text-mint">Benji,</span></h1>
-            <div class="gs_reveal gs_reveal_fromDown">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet</p>
-              <div class="flex justify-start items-center mt-20">
-                <div class="pic rounded-full overflow-hidden h-20 w-20 bg-fossil-2">
-                  <img src="" alt="">
+        <!-- CONTENT -->
+        <main class="relative z-40">
+          <!-- SECTION 1 -->
+          <div class="pSection flex items-end 2xl:min-h-720 sm:min-h-screen pt-64 pb-20 bg-fossil-1">
+            <div class="container grid grid-cols-12 gap-10 relative">
+              <div class="leftOutContent lg:col-span-6 col-span-12">
+                <h1>Hey <span class="text-mint">Benji,</span></h1>
+                <div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet</p>
+                  <div class="flex justify-start items-center mt-20">
+                    <div class="pic rounded-full overflow-hidden h-20 w-20 bg-fossil-2">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ml-7">
+                      <span class="font-medium text-mint">Matt Garish</span><br>
+                      Sales Director
+                    </div>
+                  </div>
                 </div>
-                <div class="ml-7">
-                  <span class="font-medium text-mint">Matt Garish</span><br>
-                  Sales Director
+              </div>
+              <div class="absolute bottom-0 right-0 downOutContent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="68" fill="none"><path fill="#7AFEA3" d="M22 0H0l11 16L22 0zM22 26H0l11 16 11-16zM22 52H0l11 16 11-16z"/></svg>
+              </div>
+            </div>
+          </div>
+          <!-- SECTION 2 -->
+          <div class="pSection relative flex items-center 2xl:min-h-720 sm:min-h-screen py-20 bg-fossil-1">
+            <div class="container grid grid-cols-12 grid-rows-2 grid-flow-row gap-10">
+              <div class="md:col-span-8 col-span-12 row-start-1">
+                <h2 class="leftContent">Consectetur adipiscing elit. Viverra sollicitudin aenean senectus sit citrus metus, elit condimentum nunc nunc.</h2>
+              </div>
+              <div class="upContent lg:col-span-4 sm:col-span-6 col-span-12 row-start-2">
+                <h4 class="text-mint mb-4">Who we are</h4>
+                <p>Informed by data, inspired by tech and utterly ruled by curiosity, we roll heart, mind and guts into everything we do.categories. If that’s too much fire for you, let’s start with a spark. The rest is connected.</p>
+              </div>
+              <div class="upContent col-start-6 col-end-10 row-start-2">
+                <h4 class="text-mint mb-4">AWS Intro</h4>
+                <p>Informed by data, inspired by tech and utterly ruled by curiosity, we roll heart, mind and guts into everything we do.categories. If that’s too much fire for you, let’s start with a spark. The rest is connected.</p>
+              </div>
+            </div>
+            <div class="upContent absolute bottom-0 right-slight max-w-4xl z-0">
+              <img src="images/content/logo-bg.png" alt="">
+            </div>
+          </div>
+          <!-- SECTION 3 -->
+          <div id="slideshow-wrap" class="min-h-screen lg:pt-56 py-20 bg-fossil-5 flex justify-center items-center">
+            <div class="container">
+              <div class="w-full">
+                <h2 class="text-8xl">AWS case study</h2>
+              </div>
+              <div class="col-span-12">
+                <div class="sticky-slides flex flex-nowrap pt-16">
+                  <div class="slide w-full flex-shrink-0 px-16">
+                    <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
+                      <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
+                        <h3 class="text-24">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
+                        <div class="btn-download">
+                          <div class="label">Case study</div>
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
+                        <img src="images/content/cs-1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-full flex-shrink-0 px-16">
+                    <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
+                      <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
+                        <h3 class="text-24">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
+                        <div class="btn-download">
+                          <div class="label">Case study</div>
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
+                        <img src="images/content/cs-1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-full flex-shrink-0 px-16">
+                    <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
+                      <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
+                        <h3 class="text-24">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
+                        <div class="btn-download">
+                          <div class="label">Case study</div>
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
+                        <img src="images/content/cs-1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-full flex-shrink-0 px-16">
+                    <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
+                      <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
+                        <h3 class="text-24">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
+                        <div class="btn-download">
+                          <div class="label">Case study</div>
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
+                        <img src="images/content/cs-1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide w-full flex-shrink-0 px-16">
+                    <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
+                      <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
+                        <h3 class="text-24">Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
+                        <div class="btn-download">
+                          <div class="label">Case study</div>
+                          <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
+                        <img src="images/content/cs-1.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="absolute bottom-0 right-0 gs_reveal gs_reveal_fromUp">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="68" fill="none"><path fill="#7AFEA3" d="M22 0H0l11 16L22 0zM22 26H0l11 16 11-16zM22 52H0l11 16 11-16z"/></svg>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION 2 -->
-      <div class="pSection relative flex items-center 2xl:min-h-720 sm:min-h-screen py-20 bg-fossil-1">
-        <div class="container grid grid-cols-12 grid-rows-2 grid-flow-row gap-10">
-          <div class="md:col-span-8 col-span-12 row-start-1">
-            <h2 class="leftContent">Consectetur adipiscing elit. Viverra sollicitudin aenean senectus sit citrus metus, elit condimentum nunc nunc.</h2>
-          </div>
-          <div class="upContent lg:col-span-4 sm:col-span-6 col-span-12 row-start-2">
-            <h4 class="text-mint mb-4">Who we are</h4>
-            <p>Informed by data, inspired by tech and utterly ruled by curiosity, we roll heart, mind and guts into everything we do.categories. If that’s too much fire for you, let’s start with a spark. The rest is connected.</p>
-          </div>
-          <div class="upContent col-start-6 col-end-10 row-start-2">
-            <h4 class="text-mint mb-4">AWS Intro</h4>
-            <p>Informed by data, inspired by tech and utterly ruled by curiosity, we roll heart, mind and guts into everything we do.categories. If that’s too much fire for you, let’s start with a spark. The rest is connected.</p>
-          </div>
-        </div>
-        <div class="upContent absolute bottom-0 right-slight max-w-4xl z-0">
-          <img src="images/content/logo-bg.png" alt="">
-        </div>
-      </div>
-      <!-- SECTION 3 -->
-      <div id="slideshow-wrap" class="min-h-screen lg:pt-56 py-20 bg-fossil-5 flex justify-center items-center overflow-hidden">
-        <div class="container">
-          <div class="w-full">
-            <h2 class="text-8xl">AWS case study</h2>
-          </div>
-          <div class="col-span-12">
-            <div class="sticky-slides flex flex-nowrap pt-16">
-              <div class="slide w-full flex-shrink-0 px-16">
-                <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
-                  <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
-                    <h3 class="text-24">Feature 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
-                    <div class="btn-download">
-                      <div class="label">Case study</div>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
-                    <img src="images/content/cs-1.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="slide w-full flex-shrink-0 px-16">
-                <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
-                  <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
-                    <h3 class="text-24">Feature 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
-                    <div class="btn-download">
-                      <div class="label">Case study</div>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
-                    <img src="images/content/cs-1.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="slide w-full flex-shrink-0 px-16">
-                <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
-                  <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
-                    <h3 class="text-24">Feature 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
-                    <div class="btn-download">
-                      <div class="label">Case study</div>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
-                    <img src="images/content/cs-1.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="slide w-full flex-shrink-0 px-16">
-                <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
-                  <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
-                    <h3 class="text-24">Feature 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
-                    <div class="btn-download">
-                      <div class="label">Case study</div>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
-                    <img src="images/content/cs-1.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="slide w-full flex-shrink-0 px-16">
-                <div class="inner grid grid-cols-12 opacity-0 transition-all ease-in-out duration-500">
-                  <div class="col-span-6 transform -translate-y-24 transition-all ease-in-out duration-500">
-                    <h3 class="text-24">Feature 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet duis vestibulum pulvinar ultrices. Ullamcorper phasellus molestie consequat nec tortor enenatis du.</p>
-                    <div class="btn-download">
-                      <div class="label">Case study</div>
-                      <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill="#2B2E40" d="M14.174 11.243v3l-12-.002v-3h-2v3c0 1.1.9 2 2 2l12 .001c1.1 0 2-.9 2-1.999v-3h-2zm-1-4l-1.41-1.41-2.59 2.58V.244h-2v8.168l-2.59-2.58-1.41 1.41 5 5 5-4.998z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-6 transform translate-y-24 transition-all ease-in-out duration-500">
-                    <img src="images/content/cs-1.jpg" alt="">
+          <!-- SECTION 4 -->
+          <div class="pSection bg-coral text-fossil-1 2xl:min-h-720 sm:min-h-screen py-20 flex items-center">
+            <div class="container">
+              <div class="grid grid-cols-12">
+                <div class="col-span-9">
+                  <div class="leftContent font-header text-h2 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et cras vivamus sit quis eget urna. Cursus maecenas sit quis turpis pharetra viverra est justo. Urna, nullam metus pharetra amet et. Nec senectus eu viverra in orci nibh fusce aliquam, ut.</div>
+                  <div class="rightContent mt-8 text-16">
+                    <strong>[Client name]</strong><br>
+                    [Job Title], [Company Name]
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- SECTION 4 -->
-      <div class="pSection bg-coral text-fossil-1 2xl:min-h-720 sm:min-h-screen py-20 flex items-center">
-        <div class="container">
-          <div class="grid grid-cols-12">
-            <div class="col-span-9">
-              <div class="leftContent font-header text-h2 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et cras vivamus sit quis eget urna. Cursus maecenas sit quis turpis pharetra viverra est justo. Urna, nullam metus pharetra amet et. Nec senectus eu viverra in orci nibh fusce aliquam, ut.</div>
-              <div class="rightContent mt-8 text-16">
-                <strong>[Client name]</strong><br>
-                [Job Title], [Company Name]
+          <!-- SECTION 5 -->
+          <div class="pSection bg-fossil-5 lg:py-56 py-20">
+            <div class="container">
+              <div class="leftContent w-full lg:mb-32 mb-12">
+                <h2>Give us a tough challenge</h2>
+              </div>
+              <div class="upContent flex items-center justify-between">
+                <div class="flex justify-start items-center">
+                  <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
+                    <img src="" alt="">
+                    </div>
+                    <div class="ml-7">
+                      <span class="font-medium text-mint">Matt Garish</span><br>
+                      Sales Director
+                    </div>
+                  </div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" fill="none"><path fill="#7AFEA3" d="M.872 10.592v3.216h9.072v9.696h3.36v-9.696h9.168v-3.216h-9.168v-9.6h-3.36v9.6H.872z"/></svg>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ml-7">
+                      <span class="font-medium text-mint">Sarah Townsend</span><br>
+                      Head of Digital
+                    </div>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ml-7">
+                      <span class="font-medium text-mint">Paul Wright</span><br>
+                      Head of Media
+                    </div>
+                  </div>
+                  <div class="flex justify-start items-center">
+                    <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ml-7">
+                      <span class="font-medium text-mint">Oli Budworth</span><br>
+                      Head of Strategy
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-       <!-- SECTION 5 -->
-       <div class="pSection bg-fossil-5 lg:py-56 py-20">
-         <div class="container">
-           <div class="leftContent w-full lg:mb-32 mb-12">
-             <h2>Give us a tough challenge</h2>
-           </div>
-           <div class="upContent flex items-center justify-between">
-             <div class="flex justify-start items-center">
-               <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
-                 <img src="" alt="">
-                </div>
-                <div class="ml-7">
-                  <span class="font-medium text-mint">Matt Garish</span><br>
-                  Sales Director
-                </div>
-              </div>
-              <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" fill="none"><path fill="#7AFEA3" d="M.872 10.592v3.216h9.072v9.696h3.36v-9.696h9.168v-3.216h-9.168v-9.6h-3.36v9.6H.872z"/></svg>
-              </div>
-              <div class="flex justify-start items-center">
-                <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
-                  <img src="" alt="">
-                 </div>
-                 <div class="ml-7">
-                   <span class="font-medium text-mint">Sarah Townsend</span><br>
-                   Head of Digital
-                 </div>
-               </div>
-               <div class="flex justify-start items-center">
-                <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
-                  <img src="" alt="">
-                 </div>
-                 <div class="ml-7">
-                   <span class="font-medium text-mint">Paul Wright</span><br>
-                   Head of Media
-                 </div>
-               </div>
-               <div class="flex justify-start items-center">
-                <div class="pic rounded-full overflow-hidden h-32 w-32 bg-fossil-2">
-                  <img src="" alt="">
-                 </div>
-                 <div class="ml-7">
-                   <span class="font-medium text-mint">Oli Budworth</span><br>
-                   Head of Strategy
-                 </div>
-               </div>
-           </div>
-         </div>
-       </div>
-       <!-- SECTION 6 -->
-       <div id="book-now" class="pSection bg-fossil-1 lg:py-56 py-20">
-        <div class="container">
-          <div class="w-full lg:mb-32 mb-12">
-            <h2 class="leftContent mb-8">Organise a free consultation</h2>
-            <div class="rightContent btn-arrow btn-book">
-              <div class="label ">Book now</div>
-              <div class="arrow">
-                <div class="track transform">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none"><path fill="#2B2E40" d="M14.319 39.775L33.68 20.412V38.2l4.503-.016V12.728H12.728v4.487l17.771.015-19.362 19.363 3.182 3.182z"/></svg>
-                  <svg class="transform -translate-x-40 mt-20" xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none"><path fill="#2B2E40" d="M14.319 39.775L33.68 20.412V38.2l4.503-.016V12.728H12.728v4.487l17.771.015-19.362 19.363 3.182 3.182z"/></svg>
+          <!-- SECTION 6 -->
+          <div id="book-now" class="pSection bg-fossil-1 lg:pt-56 py-20">
+            <div class="container">
+              <div class="w-full lg:mb-32 mb-12">
+                <h2 class="leftContent mb-8">Organise a free consultation</h2>
+                <div class="rightContent btn-arrow btn-book">
+                  <div class="label ">Book now</div>
+                  <div class="arrow">
+                    <div class="track transform">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none"><path fill="#2B2E40" d="M14.319 39.775L33.68 20.412V38.2l4.503-.016V12.728H12.728v4.487l17.771.015-19.362 19.363 3.182 3.182z"/></svg>
+                      <svg class="transform -translate-x-40 mt-20" xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none"><path fill="#2B2E40" d="M14.319 39.775L33.68 20.412V38.2l4.503-.016V12.728H12.728v4.487l17.771.015-19.362 19.363 3.182 3.182z"/></svg>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </main>
 
-     <!-- FOOTER -->
-    <footer class="md:pb-24 md:pt-28 py-18">
-      <div class="container">
-        <div class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="96" fill="none"><path fill="#DEE8F0" d="M60.178 22.686H41.133c-17.628 0-31.964 14.379-31.964 32.06 0 17.68 14.336 32.059 31.964 32.059h43.292v-5.397H41.17c-14.655 0-26.549-11.964-26.549-26.627 0-14.663 11.93-26.627 26.549-26.627h19.009v-5.468z"/><path fill="#DEE8F0" d="M18.408 54.745c0 12.568 10.195 22.829 22.761 22.829h31.15v-5.397H41.17c-9.557 0-17.345-7.81-17.345-17.396 0-9.586 7.788-17.397 17.345-17.397h19.009v-5.467H41.134c-12.531 0-22.726 10.225-22.726 22.828zM99.999 26.77h-8.425l4.213 6.32 4.212-6.32z"/><path fill="#DEE8F0" d="M91.576 26.77h-8.46l4.213 6.32 4.247-6.32zM83.113 26.77h-8.46l4.248 6.32 4.212-6.32z"/><path fill="#DEE8F0" d="M66.232 26.77l4.213 6.32 4.212-6.32h-8.425zM99.998 41.147H41.167c-6.655 0-12.213 4.829-13.345 11.22 0 .035 0 .106-.036.141-.035.142-.035.32-.07.462 0 .07-.036.177-.036.248 0 .142-.035.249-.035.39 0 .107-.036.214-.036.32v1.42c0 .107 0 .249.036.355 0 .107 0 .213.035.355 0 .107.036.249.036.355 0 .107.035.214.035.32 0 .107.035.248.07.355.036.107.036.213.072.32.035.106.035.213.07.355.036.106.036.213.071.32a1198.957 1198.957 0 01.319.958l.106.32.106.319.106.32c.036.106.107.212.142.319.035.106.07.213.142.284.035.106.106.213.141.32.035.106.106.177.142.283.07.107.106.213.177.284.035.107.106.178.141.284.071.107.107.178.177.285.071.106.106.177.177.284.071.106.142.177.177.283.071.072.106.178.177.249.071.106.142.178.213.284.07.071.141.178.212.249.07.07.142.177.212.248.071.071.142.178.213.249.07.07.141.177.248.248l.212.213c.07.071.177.142.248.249l.212.213c.07.07.177.142.248.213.07.07.142.142.248.213.07.07.177.142.283.213.07.07.177.142.248.177.106.071.177.142.283.213.07.071.177.107.248.178.106.07.177.142.283.177.07.071.177.107.248.178.106.07.212.106.283.177.106.036.177.107.283.142.106.071.212.107.319.178.106.035.176.106.283.142.106.035.212.106.318.142.106.035.177.07.283.142.107.035.213.07.32.142.105.035.176.07.282.106.106.036.213.071.354.107.106.035.177.07.283.106.107.036.248.071.354.107.107.035.177.071.284.071.106.035.247.071.354.071.106.035.177.035.283.071.141.035.248.035.39.071.105 0 .176.035.282.035.142.036.283.036.39.036.106 0 .177.035.283.035.142 0 .319.036.46.036h.212c.248 0 .46.035.708.035h19.044v-5.396h-19.61c-.106 0-.177 0-.283-.035-.07 0-.106 0-.177-.036-.07 0-.177-.035-.248-.035-.07 0-.106-.036-.177-.036-.07 0-.142-.035-.248-.035-.07 0-.106-.036-.177-.036-.07 0-.141-.035-.212-.035-.07 0-.106-.036-.177-.036-.07-.035-.142-.035-.212-.071-.071-.035-.107-.035-.177-.071-.071-.036-.142-.036-.213-.071-.07-.035-.106-.035-.177-.071-.07-.035-.141-.035-.212-.071-.071-.035-.106-.035-.177-.071-.071-.035-.142-.071-.177-.106-.071-.036-.106-.072-.177-.072a.773.773 0 01-.177-.106c-.071-.036-.106-.071-.177-.107-.071-.035-.106-.07-.177-.106a.489.489 0 01-.142-.107c-.07-.035-.106-.07-.177-.106-.035-.036-.106-.071-.141-.107-.071-.035-.107-.07-.177-.106-.036-.036-.107-.071-.142-.107-.07-.035-.106-.07-.177-.142-.035-.035-.106-.07-.142-.142l-.141-.142c-.035-.035-.106-.07-.142-.142l-.141-.142c-.036-.035-.071-.106-.142-.142l-.141-.142c-.036-.035-.071-.106-.142-.142-.035-.035-.07-.106-.142-.142-.035-.035-.07-.106-.106-.142a.623.623 0 00-.141-.177c-.036-.036-.071-.107-.107-.142-.035-.071-.07-.107-.106-.178-.035-.07-.07-.106-.106-.177-.035-.071-.07-.107-.106-.178-.036-.07-.071-.106-.106-.177-.036-.071-.071-.107-.107-.178-.035-.07-.07-.106-.07-.177-.036-.071-.071-.107-.107-.178-.035-.07-.07-.106-.07-.177a.6.6 0 01-.071-.178c-.036-.07-.036-.106-.071-.177-.035-.071-.035-.142-.07-.178-.036-.07-.036-.106-.072-.177-.035-.071-.035-.142-.07-.214-.036-.07-.036-.142-.071-.177-.035-.071-.035-.142-.035-.213 0-.071-.036-.142-.036-.177 0-.072-.035-.142-.035-.213 0-.072-.036-.143-.036-.214 0-.07-.035-.142-.035-.213 0-.07-.035-.142-.035-.213 0-.07 0-.142-.036-.213v-.213-.213-.213-.213-.213-.213V54c0-.07 0-.142.036-.248 0-.036 0-.107.035-.142 0-.107.035-.213.035-.284v-.071c.708-3.835 4.177-6.675 8.177-6.675h53.274c3.115-.035 5.522-2.45 5.522-5.432z"/><path fill="#DEE8F0" d="M5.381 54.959c-.106-19.882 15.964-36.071 35.752-36.071H100v-5.432H72.672L60.178 0l-12.53 13.456H40.85C18.23 13.633-.106 32.2 0 54.959.107 77.75 18.832 96 41.558 96h53.061c2.974 0 5.38-2.414 5.38-5.397H41.559c-19.752 0-36.035-15.87-36.177-35.644zM60.177 7.917l5.133 5.539H55.009l5.168-5.539z"/></svg>
-        </div>
-        <div class="footer-details">
-          <div class="xl:col-span-2 lg:col-span-3 sm:col-span-4 col-span-6">
-            <p>UK</p>
-            <p class="text-mint font-medium">The Croc</p>
-            <p>
-              The Lux Building<br>
-              2-4 Hoxton Square<br>
-              London<br>
-              N1 6NU
-            </p>
-            <p class="mt-6"><a class="text-fossil-2 hover:text-mint" href="tel:+442077494400">+44 (0)20 7749 4400</a></p>
-          </div>
-          <div class="xl:col-span-2 lg:col-span-3 sm:col-span-4 col-span-6">
-            <p>USA</p>
-            <p class="text-coral font-medium">The Croc</p>
-            <p>
-              1 Columbia Street<br>
-              Seattle WA<br>
-              98104<br>
-              USA
-            </p>
-            <p class="mt-6"><a class="text-fossil-2 hover:text-coral" href="tel:+442077494400">+44 (0)20 7749 4400</a></p>
-          </div>
-          <div class="xl:col-span-8 lg:col-span-6 col-span-12 flex lg:items-end mb-3.5">
-            <div class="mt-auto w-full">
-              <div class="w-full flex lg:justify-end items-center mb-14">
-                <div class="linkedin lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M8 19H5V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19zM6.5 8c.856 0 1.55-.672 1.55-1.5S7.356 5 6.5 5c-.856 0-1.55.672-1.55 1.5S5.644 8 6.5 8z"/></svg>
-                </div>
-                <div class="twitter lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M18.89 7.012c.808-.496 1.343-1.173 1.605-2.034-.738.4-1.53.69-2.351.861-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.559 3.559 0 00-1.076 2.605c0 .309.039.585.117.819C8.806 9.096 6.26 7.82 4.254 5.364c-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 002.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841.62.47 1.374.73 2.152.743-1.332 1.045-2.855 1.562-4.578 1.562-.422 0-.721-.006-.902-.038C4.696 18.753 6.585 19.3 8.675 19.3c2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.772 10.772 0 001.172-4.892V8.34A7.79 7.79 0 0021 6.419a8.142 8.142 0 01-2.11.593z"/></svg>
-                </div>
-                <div class="instagram lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#DAE8EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4z"/><path stroke="#DAE8EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2 11.496a3.2 3.2 0 11-6.33.939 3.2 3.2 0 016.33-.939zM16.4 7.6h.01"/></svg>
-                </div>
-                <div class="facebook lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M13 10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189.374-2.691 1.118-3.512C11.862 4.41 12.791 4 13.904 4H16v3h-2.1c-.498 0-.9.402-.9.899V10z"/></svg>
-                </div>
+        <!-- FOOTER -->
+        <footer class="md:pb-24 md:pt-28 py-18">
+          <div class="container">
+            <div class="logo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="96" fill="none"><path fill="#DEE8F0" d="M60.178 22.686H41.133c-17.628 0-31.964 14.379-31.964 32.06 0 17.68 14.336 32.059 31.964 32.059h43.292v-5.397H41.17c-14.655 0-26.549-11.964-26.549-26.627 0-14.663 11.93-26.627 26.549-26.627h19.009v-5.468z"/><path fill="#DEE8F0" d="M18.408 54.745c0 12.568 10.195 22.829 22.761 22.829h31.15v-5.397H41.17c-9.557 0-17.345-7.81-17.345-17.396 0-9.586 7.788-17.397 17.345-17.397h19.009v-5.467H41.134c-12.531 0-22.726 10.225-22.726 22.828zM99.999 26.77h-8.425l4.213 6.32 4.212-6.32z"/><path fill="#DEE8F0" d="M91.576 26.77h-8.46l4.213 6.32 4.247-6.32zM83.113 26.77h-8.46l4.248 6.32 4.212-6.32z"/><path fill="#DEE8F0" d="M66.232 26.77l4.213 6.32 4.212-6.32h-8.425zM99.998 41.147H41.167c-6.655 0-12.213 4.829-13.345 11.22 0 .035 0 .106-.036.141-.035.142-.035.32-.07.462 0 .07-.036.177-.036.248 0 .142-.035.249-.035.39 0 .107-.036.214-.036.32v1.42c0 .107 0 .249.036.355 0 .107 0 .213.035.355 0 .107.036.249.036.355 0 .107.035.214.035.32 0 .107.035.248.07.355.036.107.036.213.072.32.035.106.035.213.07.355.036.106.036.213.071.32a1198.957 1198.957 0 01.319.958l.106.32.106.319.106.32c.036.106.107.212.142.319.035.106.07.213.142.284.035.106.106.213.141.32.035.106.106.177.142.283.07.107.106.213.177.284.035.107.106.178.141.284.071.107.107.178.177.285.071.106.106.177.177.284.071.106.142.177.177.283.071.072.106.178.177.249.071.106.142.178.213.284.07.071.141.178.212.249.07.07.142.177.212.248.071.071.142.178.213.249.07.07.141.177.248.248l.212.213c.07.071.177.142.248.249l.212.213c.07.07.177.142.248.213.07.07.142.142.248.213.07.07.177.142.283.213.07.07.177.142.248.177.106.071.177.142.283.213.07.071.177.107.248.178.106.07.177.142.283.177.07.071.177.107.248.178.106.07.212.106.283.177.106.036.177.107.283.142.106.071.212.107.319.178.106.035.176.106.283.142.106.035.212.106.318.142.106.035.177.07.283.142.107.035.213.07.32.142.105.035.176.07.282.106.106.036.213.071.354.107.106.035.177.07.283.106.107.036.248.071.354.107.107.035.177.071.284.071.106.035.247.071.354.071.106.035.177.035.283.071.141.035.248.035.39.071.105 0 .176.035.282.035.142.036.283.036.39.036.106 0 .177.035.283.035.142 0 .319.036.46.036h.212c.248 0 .46.035.708.035h19.044v-5.396h-19.61c-.106 0-.177 0-.283-.035-.07 0-.106 0-.177-.036-.07 0-.177-.035-.248-.035-.07 0-.106-.036-.177-.036-.07 0-.142-.035-.248-.035-.07 0-.106-.036-.177-.036-.07 0-.141-.035-.212-.035-.07 0-.106-.036-.177-.036-.07-.035-.142-.035-.212-.071-.071-.035-.107-.035-.177-.071-.071-.036-.142-.036-.213-.071-.07-.035-.106-.035-.177-.071-.07-.035-.141-.035-.212-.071-.071-.035-.106-.035-.177-.071-.071-.035-.142-.071-.177-.106-.071-.036-.106-.072-.177-.072a.773.773 0 01-.177-.106c-.071-.036-.106-.071-.177-.107-.071-.035-.106-.07-.177-.106a.489.489 0 01-.142-.107c-.07-.035-.106-.07-.177-.106-.035-.036-.106-.071-.141-.107-.071-.035-.107-.07-.177-.106-.036-.036-.107-.071-.142-.107-.07-.035-.106-.07-.177-.142-.035-.035-.106-.07-.142-.142l-.141-.142c-.035-.035-.106-.07-.142-.142l-.141-.142c-.036-.035-.071-.106-.142-.142l-.141-.142c-.036-.035-.071-.106-.142-.142-.035-.035-.07-.106-.142-.142-.035-.035-.07-.106-.106-.142a.623.623 0 00-.141-.177c-.036-.036-.071-.107-.107-.142-.035-.071-.07-.107-.106-.178-.035-.07-.07-.106-.106-.177-.035-.071-.07-.107-.106-.178-.036-.07-.071-.106-.106-.177-.036-.071-.071-.107-.107-.178-.035-.07-.07-.106-.07-.177-.036-.071-.071-.107-.107-.178-.035-.07-.07-.106-.07-.177a.6.6 0 01-.071-.178c-.036-.07-.036-.106-.071-.177-.035-.071-.035-.142-.07-.178-.036-.07-.036-.106-.072-.177-.035-.071-.035-.142-.07-.214-.036-.07-.036-.142-.071-.177-.035-.071-.035-.142-.035-.213 0-.071-.036-.142-.036-.177 0-.072-.035-.142-.035-.213 0-.072-.036-.143-.036-.214 0-.07-.035-.142-.035-.213 0-.07-.035-.142-.035-.213 0-.07 0-.142-.036-.213v-.213-.213-.213-.213-.213-.213V54c0-.07 0-.142.036-.248 0-.036 0-.107.035-.142 0-.107.035-.213.035-.284v-.071c.708-3.835 4.177-6.675 8.177-6.675h53.274c3.115-.035 5.522-2.45 5.522-5.432z"/><path fill="#DEE8F0" d="M5.381 54.959c-.106-19.882 15.964-36.071 35.752-36.071H100v-5.432H72.672L60.178 0l-12.53 13.456H40.85C18.23 13.633-.106 32.2 0 54.959.107 77.75 18.832 96 41.558 96h53.061c2.974 0 5.38-2.414 5.38-5.397H41.559c-19.752 0-36.035-15.87-36.177-35.644zM60.177 7.917l5.133 5.539H55.009l5.168-5.539z"/></svg>
+            </div>
+            <div class="footer-details">
+              <div class="xl:col-span-2 lg:col-span-3 sm:col-span-4 col-span-6">
+                <p>UK</p>
+                <p class="text-mint font-medium">The Croc</p>
+                <p>
+                  The Lux Building<br>
+                  2-4 Hoxton Square<br>
+                  London<br>
+                  N1 6NU
+                </p>
+                <p class="mt-6"><a class="text-fossil-2 hover:text-mint" href="tel:+442077494400">+44 (0)20 7749 4400</a></p>
               </div>
-              <div class="w-full flex lg:justify-end items-center text-xl">
-                <div class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8">&copy; The Croc 2020</div>
-                <a class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8" href="#">Cookie Policy</a>
-                <a class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8" href="#">Privacy Policy</a>
+              <div class="xl:col-span-2 lg:col-span-3 sm:col-span-4 col-span-6">
+                <p>USA</p>
+                <p class="text-coral font-medium">The Croc</p>
+                <p>
+                  1 Columbia Street<br>
+                  Seattle WA<br>
+                  98104<br>
+                  USA
+                </p>
+                <p class="mt-6"><a class="text-fossil-2 hover:text-coral" href="tel:+442077494400">+44 (0)20 7749 4400</a></p>
+              </div>
+              <div class="xl:col-span-8 lg:col-span-6 col-span-12 flex lg:items-end mb-3.5">
+                <div class="mt-auto w-full">
+                  <div class="w-full flex lg:justify-end items-center mb-14">
+                    <div class="linkedin lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M8 19H5V9h3v10zm11 0h-3v-5.342c0-1.392-.496-2.085-1.479-2.085-.779 0-1.273.388-1.521 1.165V19h-3s.04-9 0-10h2.368l.183 2h.062c.615-1 1.598-1.678 2.946-1.678 1.025 0 1.854.285 2.487 1.001.637.717.954 1.679.954 3.03V19zM6.5 8c.856 0 1.55-.672 1.55-1.5S7.356 5 6.5 5c-.856 0-1.55.672-1.55 1.5S5.644 8 6.5 8z"/></svg>
+                    </div>
+                    <div class="twitter lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M18.89 7.012c.808-.496 1.343-1.173 1.605-2.034-.738.4-1.53.69-2.351.861-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.559 3.559 0 00-1.076 2.605c0 .309.039.585.117.819C8.806 9.096 6.26 7.82 4.254 5.364c-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 002.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841.62.47 1.374.73 2.152.743-1.332 1.045-2.855 1.562-4.578 1.562-.422 0-.721-.006-.902-.038C4.696 18.753 6.585 19.3 8.675 19.3c2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.772 10.772 0 001.172-4.892V8.34A7.79 7.79 0 0021 6.419a8.142 8.142 0 01-2.11.593z"/></svg>
+                    </div>
+                    <div class="instagram lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path stroke="#DAE8EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4z"/><path stroke="#DAE8EF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.2 11.496a3.2 3.2 0 11-6.33.939 3.2 3.2 0 016.33-.939zM16.4 7.6h.01"/></svg>
+                    </div>
+                    <div class="facebook lg:ml-16 lg:mr-0 sm:mr-16 mr-8">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#DAE8EF" d="M13 10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189.374-2.691 1.118-3.512C11.862 4.41 12.791 4 13.904 4H16v3h-2.1c-.498 0-.9.402-.9.899V10z"/></svg>
+                    </div>
+                  </div>
+                  <div class="w-full flex lg:justify-end items-center text-xl">
+                    <div class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8">&copy; The Croc 2020</div>
+                    <a class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8" href="#">Cookie Policy</a>
+                    <a class="lg:ml-16 lg:mr-0 sm:mr-16 mr-8" href="#">Privacy Policy</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </footer>
+
       </div>
-    </footer>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
   </body>
 </html>
