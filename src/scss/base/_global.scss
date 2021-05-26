@@ -78,30 +78,11 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 900;
-  text-align: center;
-  background-color: #070707;
+  display: flex;
+  align-items: center;
 
   transform: translateY(100%);
   opacity: 0;
-}
-
-.panel-text.blue-text {
-  color: blue;
-}
-
-.panel-text.red-text {
-  color: red;
-}
-
-.panel-text.purple-text {
-  color: purple;
-}
-
-.panel-text.orange-text {
-  color: orange;
 }
 
 .p-wrap {
@@ -123,30 +104,11 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .panel._2 {
   z-index: 1;
-}
-
-.panel.blue {
-  z-index: auto;
-}
-
-.panel.red {
-  z-index: auto;
-  background-color: red;
-  background-image: none;
-}
-
-.panel.orange {
-  z-index: auto;
-  background-color: #cf5d00;
-  background-image: none;
-}
-
-.panel.purple {
-  z-index: auto;
-  background-color: #808;
-  background-image: none;
 }

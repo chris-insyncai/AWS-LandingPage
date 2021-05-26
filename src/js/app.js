@@ -17,7 +17,7 @@ bodyScrollBar.addListener(ScrollTrigger.update);
 // SLIDER
 gsap.set('.panel', { zIndex: (i, target, targets) => targets.length - i });
 
-var images = gsap.utils.toArray('.panel:not(.purple)');
+var images = gsap.utils.toArray('.panel:not(.last)');
 
 images.forEach((image, i) => {
   var tl = gsap.timeline({
@@ -32,7 +32,7 @@ images.forEach((image, i) => {
     },
   });
 
-  tl.to(image, { height: 0 });
+  tl.to(image, { opacity: 1 }).to(image, { height: 0, opacity: 0 }, 0.66);
 });
 
 gsap.set('.panel-text', { zIndex: (i, target, targets) => targets.length - i });
@@ -52,9 +52,9 @@ texts.forEach((text, i) => {
     },
   });
 
-  tl.to(text, { duration: 0.33, opacity: 1, y: '50%' }).to(
+  tl.to(text, { duration: 0.33, opacity: 1, y: '0%' }).to(
     text,
-    { duration: 0.33, opacity: 0, y: '0%' },
+    { duration: 0.33, opacity: 0, y: '-25%' },
     0.66
   );
 });
@@ -63,7 +63,6 @@ ScrollTrigger.create({
   trigger: '#slideshow-wrap',
   scroller: '.scroller',
   scrub: true,
-  markers: true,
   pin: true,
   start: () => 'top top',
   end: () => '+=' + (images.length + 1) * window.innerHeight,
@@ -186,7 +185,6 @@ lOContent.forEach((elem, i) => {
       start: 'center bottom',
       end: 'bottom top',
       scrub: true,
-      markers: true,
       invalidateOnRefresh: true,
       toggleActions: 'play reverse play reverse',
     },
