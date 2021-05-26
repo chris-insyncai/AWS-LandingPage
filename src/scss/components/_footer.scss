@@ -1,5 +1,9 @@
 .footer-details {
-  @apply grid grid-cols-12 gap-10 mt-24 font-thin text-14;
+  @apply grid grid-cols-12 gap-10 mt-10 font-thin text-14;
+
+  @media (min-width: 1024px) {
+    @apply mt-24;
+  }
 
   p {
     @apply my-3.5;

@@ -1,1 +1,35 @@
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
+@media (min-width: 1085px) {
+  .container {
+    max-width: 1085px;
+  }
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.slide.active .inner {
+  opacity: 1;
+
+  .col-span-6 {
+    transform: translateY(0);
+  }
+}
+
+.upContent {
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.leftContent,
+.rightContent {
+  transform: translateX(0);
+  opacity: 0;
+}

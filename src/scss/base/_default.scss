@@ -24,7 +24,7 @@ body {
 
 body,
 html {
-  @apply relative block min-h-screen w-screen overflow-x-hidden text-fossil-2;
+  @apply relative block min-h-screen w-screen text-fossil-2;
 }
 
 h1,
@@ -32,11 +32,11 @@ h2,
 h3,
 h3,
 h4 {
-  @apply font-header tracking-tighter text-fossil-2;
+  @apply font-header tracking-tighter text-fossil-2 leading-tight;
 }
 
 h1 {
-  @apply text-h1;
+  @apply text-h1 leading-none;
 }
 h2 {
   @apply text-h2;
@@ -48,7 +48,15 @@ h4 {
   @apply text-h4;
 }
 
+p {
+  @apply my-6;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+strong {
+  @apply font-medium;
 }

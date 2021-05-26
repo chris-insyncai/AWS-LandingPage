@@ -6,14 +6,20 @@
   }
 }
 
-.btn-arrow {
-  @apply flex justify-center items-center text-24 leading-none cursor-pointer;
+.btn-arrow,
+.btn-book {
+  @apply inline-block text-24 leading-none cursor-pointer;
   .label {
-    @apply bg-mint text-fossil-1 font-medium transition-all duration-500 ease-in-out;
+    @apply inline-block align-middle bg-mint text-fossil-1 font-medium transition-all duration-500 ease-in-out;
     padding: 10px 4px 6px;
   }
   .arrow {
-    @apply rounded-full bg-mint flex justify-center items-center w-16 h-16 ml-4 transition-all duration-500 ease-in-out;
+    @apply inline-block align-middle text-center rounded-full bg-mint w-16 h-16 ml-4 overflow-hidden transition-all duration-500 ease-in-out;
+    padding-top: 6px;
+
+    svg {
+      @apply inline-block;
+    }
   }
 
   &:hover {
@@ -21,8 +27,35 @@
     .arrow {
       @apply bg-coral;
     }
-    .arrow {
-      @apply mt-6;
+  }
+}
+.btn-book {
+  .label {
+    @apply text-h2 leading-none;
+    padding: 12px 8px 6px;
+  }
+  .arrow {
+    @apply h-56 w-56 ml-3.5;
+    padding-top: 2px;
+  }
+}
+
+.btn-download {
+  @apply flex flex-grow-0 justify-start items-center text-24 leading-none cursor-pointer;
+  .label {
+    @apply text-mint text-16 font-medium transition-all duration-500 ease-in-out;
+  }
+  .icon {
+    @apply rounded-full bg-mint flex justify-center items-center w-11 h-11 ml-4 transition-all duration-500 ease-in-out;
+  }
+
+  &:hover {
+    .label,
+    .icon {
+      @apply text-coral;
+    }
+    .icon {
+      @apply bg-coral;
     }
   }
 }

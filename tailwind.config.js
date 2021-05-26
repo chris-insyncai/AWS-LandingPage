@@ -9,6 +9,9 @@ module.exports = {
       padding: '1.5rem',
     },
     extend: {
+      screens: {
+        '2xl': '1536px',
+      },
       colors: {
         'fossil-1': '#2B2E40',
         'fossil-2': '#DAE8EF',
@@ -37,7 +40,23 @@ module.exports = {
         h3: '3rem',
         h4: '2rem',
         24: '2.4rem',
+        16: '1.6rem',
         14: '1.4rem',
+      },
+      minHeight: {
+        720: '720px',
+      },
+      height: {
+        56: '56px',
+      },
+      width: {
+        56: '56px',
+      },
+      inset: {
+        slight: '10%',
+      },
+      rotate: {
+        135: '-135deg',
       },
     },
   },
@@ -54,20 +73,12 @@ module.exports = {
         'a:hover': {
           color: config('theme.textColor.coral'),
         },
-        p: {
-          marginBottom: config('theme.margin.3'),
-          lineHeight: config('theme.lineHeight.normal'),
-        },
         'h1, h2, h3, h4, h5': {
-          marginBottom: config('theme.margin.2'),
           lineHeight: config('theme.lineHeight.tight'),
+          fontFamily: config('theme.fontFamily.header'),
         },
-        h1: { fontSize: config('theme.fontSize.h1') },
-        h2: { fontSize: config('theme.fontSize.h2') },
-        h3: { fontSize: config('theme.fontSize.h3') },
         h4: {
-          fontSize: config('theme.fontSize.h4'),
-          fontWeight: config('theme.fontWeight.medium'),
+          fontFamily: config('theme.fontFamily.medium'),
         },
         h5: { fontSize: config('theme.fontSize.xl') },
       });
