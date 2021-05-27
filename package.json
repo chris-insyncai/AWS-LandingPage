@@ -84,7 +84,6 @@
   "target": "web",
   "dependencies": {
     "gsap": "^3.6.1",
-    "locomotive-scroll": "^4.1.1",
     "smooth-scrollbar": "^8.6.2"
   }
 }

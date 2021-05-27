@@ -1,5 +1,8 @@
 import '../scss/app.scss';
 
+// NEEDS A LOT OF REFACTORING/CLEANUP BUT TIME CONSTRAINTS AND ALL THAT JAZZ...
+
+// SMOOTH SCROLLER
 let bodyScrollBar = Scrollbar.init(document.body, {
   damping: 0.1,
   delegateTo: document,
@@ -69,7 +72,7 @@ ScrollTrigger.create({
   invalidateOnRefresh: true,
 });
 
-// Content Animations
+// HEADER ANIMATION (Was used for other content e.g. From left but updated content to scroll/scrub animations)
 function animateFrom(elem, direction) {
   direction = direction || 1;
   var x = 0,
@@ -102,6 +105,31 @@ function animateFrom(elem, direction) {
     }
   );
 }
+
+function hide(elem) {
+  gsap.set(elem, { autoAlpha: 0 });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.gs_reveal').forEach(function (elem) {
+    hide(elem); // assure that the element is hidden when scrolled into view
+
+    ScrollTrigger.create({
+      trigger: elem,
+      onEnter: function () {
+        animateFrom(elem);
+      },
+      onEnterBack: function () {
+        animateFrom(elem, -1);
+      },
+      onLeave: function () {
+        hide(elem);
+      }, // assure that the element is hidden when scrolled into view
+    });
+  });
+});
 
 // Scroll In Animations
 var uContent = gsap.utils.toArray('.upContent');
@@ -173,7 +201,7 @@ rContent.forEach((elem, i) => {
   );
 });
 
-// Scroll Out Animations
+// Scroll Out Animations (Used for Section 1 where scroll in won't happen)
 var lOContent = gsap.utils.toArray('.leftOutContent');
 
 lOContent.forEach((elem, i) => {
@@ -243,32 +271,7 @@ dOContent.forEach((elem, i) => {
   );
 });
 
-function hide(elem) {
-  gsap.set(elem, { autoAlpha: 0 });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.utils.toArray('.gs_reveal').forEach(function (elem) {
-    hide(elem); // assure that the element is hidden when scrolled into view
-
-    ScrollTrigger.create({
-      trigger: elem,
-      onEnter: function () {
-        animateFrom(elem);
-      },
-      onEnterBack: function () {
-        animateFrom(elem, -1);
-      },
-      onLeave: function () {
-        hide(elem);
-      }, // assure that the element is hidden when scrolled into view
-    });
-  });
-});
-
-// Button Animations
+// BUTTON ANIMATIONS
 gsap.utils.toArray('.btn-arrow.arrow-down').forEach((downArrow) => {
   let hover = gsap.to(downArrow.lastElementChild.firstElementChild, {
     y: '0rem',
