@@ -1,5 +1,9 @@
 .btn {
-  @apply py-6 px-4 bg-mint text-fossil-1 text-24 font-medium leading-none cursor-pointer transition-all duration-500 ease-in-out;
+  @apply py-6 px-4 bg-mint text-fossil-1 text-16 font-medium leading-none cursor-pointer transition-all duration-500 ease-in-out;
+
+  @media (min-width: 640px) {
+    @apply text-24;
+  }
 
   &:hover {
     @apply bg-coral;
@@ -8,14 +12,18 @@
 
 .btn-arrow,
 .btn-book {
-  @apply inline-block text-24 leading-none cursor-pointer;
+  @apply inline-block leading-none cursor-pointer;
   .label {
-    @apply inline-block align-middle bg-mint text-fossil-1 font-medium transition-all duration-500 ease-in-out;
+    @apply inline-block align-middle bg-mint text-fossil-1 text-16 font-medium transition-all duration-500 ease-in-out;
     padding: 10px 4px 6px;
+
+    @media (min-width: 640px) {
+      @apply text-24;
+    }
   }
   .arrow {
     @apply inline-block align-middle text-center rounded-full bg-mint w-16 h-16 ml-4 overflow-hidden transition-all duration-500 ease-in-out;
-    padding-top: 6px;
+    padding-top: 9px;
 
     svg {
       @apply inline-block;
@@ -31,17 +39,26 @@
 }
 .btn-book {
   .label {
-    @apply text-h2 leading-none;
+    @apply text-4xl leading-none;
     padding: 12px 8px 6px;
+
+    @media (min-width: 640px) {
+      @apply text-h2;
+    }
   }
   .arrow {
     @apply h-56 w-56 ml-3.5;
     padding-top: 2px;
+    display: none;
+
+    @media (min-width: 650px) {
+      display: inline-block;
+    }
   }
 }
 
 .btn-download {
-  @apply flex flex-grow-0 justify-start items-center text-24 leading-none cursor-pointer;
+  @apply flex flex-grow-0 justify-start items-center leading-none cursor-pointer;
   .label {
     @apply text-mint text-16 font-medium transition-all duration-500 ease-in-out;
   }
