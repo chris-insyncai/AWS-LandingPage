@@ -29,8 +29,8 @@ images.forEach((image, i) => {
       scroller: '.scroller',
       start: () => 'top -' + window.innerHeight * (i + 0.5),
       end: () => '+=' + window.innerHeight,
-      scrub: true,
-      toggleActions: 'play none reverse none',
+      scrub: false,
+      toggleActions: 'play none reverse none', //onEnter, onLeave, onEnterBack, onLeaveBack
       invalidateOnRefresh: true,
     },
   });
@@ -49,7 +49,7 @@ texts.forEach((text, i) => {
       scroller: '.scroller',
       start: () => 'top -' + window.innerHeight * i,
       end: () => '+=' + window.innerHeight,
-      scrub: true,
+      scrub: false,
       toggleActions: 'play none reverse none',
       invalidateOnRefresh: true,
     },
@@ -65,7 +65,7 @@ texts.forEach((text, i) => {
 ScrollTrigger.create({
   trigger: '#slideshow-wrap',
   scroller: '.scroller',
-  scrub: true,
+  scrub: false,
   pin: true,
   start: () => 'top top',
   end: () => '+=' + (images.length + 1) * window.innerHeight,
